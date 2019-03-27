@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".foreground.crush.CrushFragment">
+    <data>
+        <import type="io.kofes.chillout.R"/>
+        <import type="android.view.View"/>
+        <variable name="viewmodel" type="io.kofes.chillout.foreground.crush.CrushVM"/>
+    </data>
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+
+                android:text="@string/crush"
+                android:onClick="@{() -> viewmodel.onClick()}"/>
+    </RelativeLayout>
+</layout>
